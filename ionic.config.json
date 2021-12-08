@@ -1,0 +1,7 @@
+{
+  "name": "arsenicumapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
