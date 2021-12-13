@@ -1,0 +1,45 @@
+ion-list {
+
+    ion-row {
+        ion-col {
+            b {
+                font-weight: bold;
+                font-size: 14px;
+            }
+            ion-item {
+                ion-label {
+                    p {
+                        margin-bottom: 16px;
+                        color: rgb(139, 138, 138);
+                    }
+                    h1 {
+                        font-family: "Poppins-Medium";
+                        font-weight: bold;
+                        font-size: 26px;
+                    }
+                    ion-icon {
+                        margin-top: 10px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.area-receita-despesa {
+
+    display: inline-flex;
+    box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.09);
+    border-radius: 20px;
+    height: 30%;
+
+    p {
+        font-size: 12px;
+    }
+    h2 {
+        font-weight: bold;
+    }
+
+}

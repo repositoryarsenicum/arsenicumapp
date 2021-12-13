@@ -1,27 +1,15 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-label {
+  font-size: 10px;
+  font-weight: bold;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+ion-fab {
+  margin-bottom: 22px;
+  ion-fab-button {
+    background-position: top;
+    --background: linear-gradient(30deg, rgb(35, 28, 167) 0%, rgb(82, 82, 223) 46%, rgba(0,212,255,1) 100%);
+  }
+  ion-fab-button:hover {
+    --background: linear-gradient(50deg, rgb(35, 28, 167) 0%, rgb(82, 82, 223) 46%, rgba(0,212,255,1) 100%);
+  }
 }

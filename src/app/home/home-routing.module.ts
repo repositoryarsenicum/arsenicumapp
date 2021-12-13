@@ -4,8 +4,56 @@ import { HomePage } from './home.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomePage,
+    children: [
+      {
+        path: "principal",
+        children: [
+          {
+            path: "",
+            loadChildren: () => import("../page/principal/principal.module").then(m => m.PrincipalPageModule)
+          }
+        ]
+      },
+      {
+        path: "movimentacao",
+        children: [
+          {
+            path: "",
+            loadChildren: () => import("../page/movimentacao/movimentacao.module").then(m => m.MovimentacaoPageModule)
+          }
+        ]
+      },
+      {
+        path: "cartoes",
+        children: [
+          {
+            path: "",
+            loadChildren: () => import("../page/cartoes/cartoes-routing.module").then(m => m.CartoesPageRoutingModule)
+          }
+        ]
+      },
+      {
+        path: "configuracao",
+        children: [
+          {
+            path: "",
+            loadChildren: () => import("../page/configuracao/configuracao.module").then(m => m.ConfiguracaoPageModule)
+          }
+        ]
+      },
+      {
+        path: "",
+        redirectTo: "home/principal",
+        pathMatch: "full"
+      }
+    ]
+  },
+  {
+    path: "",
+    redirectTo: "home/principal",
+    pathMatch: "full"
   }
 ];
 
