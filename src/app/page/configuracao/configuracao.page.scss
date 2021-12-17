@@ -14,7 +14,7 @@ ion-content {
         ion-item {
             --background: rgba(255, 255, 255, .1);
             padding: 6px;
-            --border-radius: 15px;
+            --border-radius: 10px;
             color: #FFFFFF;
 
             ion-label {
@@ -22,11 +22,11 @@ ion-content {
 
                 b {
                     font-weight: bold;
-                    font-size: 14px;
+                    font-size: 13px;
                 }
                 p {
                     color: rgba(255, 255, 255, .66);
-                    font-size: 12px;
+                    font-size: 10px;
                 }
             }
         }

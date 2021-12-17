@@ -26,11 +26,11 @@ const routes: Routes = [
         ]
       },
       {
-        path: "cartoes",
+        path: "pessoa",
         children: [
           {
             path: "",
-            loadChildren: () => import("../page/cartoes/cartoes-routing.module").then(m => m.CartoesPageRoutingModule)
+            loadChildren: () => import("../page/pessoa/pessoa.module").then(m => m.PessoaPageModule)
           }
         ]
       },
