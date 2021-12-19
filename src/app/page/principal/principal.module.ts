@@ -1,11 +1,9 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
-
+import { SwiperModule } from "swiper/angular";
 import { PrincipalPageRoutingModule } from './principal-routing.module';
-
 import { PrincipalPage } from './principal.page';
 
 @NgModule({
@@ -13,7 +11,8 @@ import { PrincipalPage } from './principal.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    PrincipalPageRoutingModule
+    PrincipalPageRoutingModule,
+    SwiperModule
   ],
   declarations: [PrincipalPage]
 })
