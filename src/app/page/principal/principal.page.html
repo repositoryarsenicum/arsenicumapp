@@ -122,7 +122,7 @@
 
   <div class="area-cartoes ion-padding-slide">
 
-    <ion-slides>
+    <ion-slides [options]="{ slidesPerView: 'auto', loop: true, zoom: true, gradCursor: true }">
       <ion-slide>
         <ion-col>
           <div class="cartao-slide">
@@ -148,6 +148,7 @@
           </div>
         </ion-col>
       </ion-slide>
+
       <ion-slide>
         <ion-col>
           <div class="cartao-slide">
