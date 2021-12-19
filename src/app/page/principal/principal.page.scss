@@ -43,3 +43,54 @@ ion-list {
     }
 
 }
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    b {
+        margin: 0 0 0 0;
+        font-size: 15px;
+        color: #656565;
+    }
+    p {
+        margin: 0 16px 0 0;
+        font-size: 13px;
+        color: rgb(139, 138, 138);
+    }
+}
+
+.area-demonstrativo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    p {
+        font-size: 14px;
+    }
+    b {
+        font-size: 18px;
+        margin-left: 14%;
+    }
+    .area-left {
+        margin-left: 10px;
+        width: 46%;
+        height: 100px;
+        background: linear-gradient(50deg, rgb(104, 97, 230) 0%, rgb(82, 82, 223) 46%, rgba(0,212,255,1) 100%);
+        border-radius: 10px;
+        padding: 6px;
+    }
+    .area-right {
+        margin-right: 10px;
+        width: 46%;
+        height: 100px;
+        background: linear-gradient(50deg, rgb(235, 78, 112) 0%, rgb(161, 40, 40) 46%, rgb(212, 15, 74) 100%);
+        border-radius: 10px;
+        padding: 6px;
+    }
+}
+
+.area-movimentacao-card { 
+    margin-bottom: 20px;
+}
