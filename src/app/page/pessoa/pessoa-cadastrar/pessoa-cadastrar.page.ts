@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-pessoa-cadastrar',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PessoaCadastrarPage implements OnInit {
 
+  @ViewChild("form") form: NgForm;
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  public async salvarDadosPessoa() { 
+
+    const { nome } = this.form.value;
+
+    if(!nome) return;
+
+    console.log(this.form.value);
+    
+    
   }
 
 }

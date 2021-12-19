@@ -1,11 +1,8 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
-
 import { PessoaCadastrarPageRoutingModule } from './pessoa-cadastrar-routing.module';
-
 import { PessoaCadastrarPage } from './pessoa-cadastrar.page';
 
 @NgModule({

@@ -30,13 +30,13 @@
 
   <div class="container">
 
-    <ion-searchbar placeholder="Pesquisar..."></ion-searchbar>
+    <ion-searchbar [(ngModel)]="pesquisarInput" showCancelButton="focus" cancelButtonText="Limpar" placeholder="Pesquisar..."></ion-searchbar>
 
     <ion-list>
-      <ion-item-sliding *ngFor="let pessoa_ of pessoaModelList">
+      <ion-item-sliding *ngFor="let pessoa_ of pessoaModelList | filter: pesquisarInput">
 
         <ion-item-options side="start">
-          <ion-item-option color="danger">Excluir</ion-item-option>
+          <ion-item-option (click)="excluirPessoa()" color="danger">Excluir</ion-item-option>
         </ion-item-options>
         
         <ion-item>
