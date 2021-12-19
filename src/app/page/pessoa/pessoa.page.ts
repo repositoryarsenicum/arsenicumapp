@@ -37,7 +37,7 @@ export class PessoaPage implements OnInit {
     loading.dismiss();
   }
 
-  public async excluirPessoa() {
+  public async excluirPessoa(codigoPessoa: number) {
     const alertaExclusao = await this.alertController.create({
       header: "Alerta",
       message: "Deseja realmente excluir essa Pessoa?",
@@ -51,7 +51,9 @@ export class PessoaPage implements OnInit {
           text: "Excluir",
           handler: () => {
               console.log("Excluir Pessoa!");
-              this.recuperarPessoasSistema();
+              this.pessoaService.excluirPessoaSistema(codigoPessoa).subscribe( response => {
+                this.recuperarPessoasSistema();
+              });
           }
         }
       ]

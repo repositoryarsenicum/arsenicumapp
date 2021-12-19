@@ -16,4 +16,13 @@ export class PessoaService {
     return this.httpClient.get<PessoaModel[]>("http://localhost:3000/pessoa");
   }
 
+  public criarPessoaFisica(pessoaModel: PessoaModel) : Observable<PessoaModel> {
+    return this.httpClient.post(`http://localhost:3000/pessoa/fisica`, pessoaModel);
+  }
+
+  public excluirPessoaSistema(codigoPessoa: number) : Observable<PessoaModel> {
+    console.log("CODIGO DA PESSOA: ", codigoPessoa);    
+    return this.httpClient.delete(`http://localhost:3000/pessoa/${codigoPessoa}`);
+  }
+
 }
