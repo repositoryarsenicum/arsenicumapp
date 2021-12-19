@@ -26,11 +26,11 @@ const routes: Routes = [
         ]
       },
       {
-        path: "pessoa",
+        path: "cadastros",
         children: [
           {
             path: "",
-            loadChildren: () => import("../page/pessoa/pessoa.module").then(m => m.PessoaPageModule)
+            loadChildren: () => import("../page/cadastros/cadastros.module").then(m => m.CadastrosPageModule)
           }
         ]
       },
