@@ -122,14 +122,14 @@
 
   <div class="area-cartoes ion-padding-slide">
 
-    <ion-slides [options]="{ slidesPerView: 'auto', loop: true, zoom: true, gradCursor: true }">
+    <ion-slides [options]="{ slidesPerView: true, loop: true, zoom: true, gradCursor: true }">
       <ion-slide>
         <ion-col>
           <div class="cartao-slide">
             <div class="card-container" style="background: linear-gradient(45deg, rgb(43, 92, 226), rgb(20, 200, 255));">
               <div class="image-card">
-                <ion-icon></ion-icon>
                 <ion-icon name="hardware-chip-outline"></ion-icon>
+                <ion-label>Crédito</ion-label>
               </div>
               <div class="card-number-box">2354 #### #### 5059</div>
               <div class="flexbox">
@@ -191,8 +191,8 @@
           Banco do Brasil
         </div>
         <div class="card-data-vencimento">
+          <p style="font-size: 12px;">10/12/2021</p>
           <p>R$ 10.000,00</p>
-          <p>10/12/2021</p>
         </div>
       </ion-slide>
 
