@@ -14,6 +14,8 @@ export class PessoaCadastrarPage implements OnInit {
 
   @ViewChild("form") form: NgForm;
 
+  public isFocoCampo: boolean;
+
   constructor(
     private pessoaService: PessoaService,
     private alertController: AlertController,
@@ -21,6 +23,14 @@ export class PessoaCadastrarPage implements OnInit {
   ) { }
 
   ngOnInit() { }
+
+  onBlur(event: any) {
+    const value = event.target.value;
+    if(!value) {
+      this.isFocoCampo = false;
+    }
+    console.log(value);    
+  }
 
   public async salvarDadosPessoa() {
     const alerta = await this.alertController.create({

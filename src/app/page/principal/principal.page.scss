@@ -18,7 +18,7 @@ ion-list {
                     }
                     ion-icon {
                         margin-top: 10px;
-                        font-size: 20px;
+                        font-size: 40px;
                     }
                 }
             }
@@ -27,16 +27,19 @@ ion-list {
 }
 
 .area-receita-despesa {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.09);
     border-radius: 20px;
     height: 30%;
-
     p {
-        font-size: 12px;
+        font-size: 14px;
+        margin-bottom: 10px;
     }
-    h2 {
+    h1 {
         font-weight: bold;
+        font-size: 13px;
     }
 }
 
@@ -157,4 +160,38 @@ ion-list {
             margin-right: 18px;
         }
     }
+}
+
+.area-plano-aquisicao {
+    
+    margin-bottom: 100px;
+
+    .produto-valor {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .barra-progresso {
+        text-align: center;
+        ion-progress-bar {
+            margin-bottom: 20px;
+            justify-content: center;
+            width: 90%;
+            margin-left: 5%;
+            border-radius: 20px;
+        }
+    }
+
+    p:nth-last-child(1) {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    p:nth-last-child(2) {
+        color: #888888;
+        font-weight: 700;
+        font-size: 12px;
+    }
+
 }

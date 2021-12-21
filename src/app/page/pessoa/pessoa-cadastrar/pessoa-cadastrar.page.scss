@@ -1,0 +1,57 @@
+.form-field {
+
+    height: 50px;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 1rem;
+
+    label {
+        color: #939FAB;
+        font-size: 1rem;
+        transition: 0.5s;
+        padding: 0 0.25rem;
+        top: 1rem;
+        left: 1rem;
+        position: absolute;
+    }
+
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        font-size: 17px;
+        font-weight: bold;
+        border: 2px solid #E7EBEE;
+        border-radius: 14px;
+        outline: none;
+        padding: 1rem;
+        background: none;
+        z-index: 1;
+        color: #171C25;
+    }
+
+    input:focus {
+        border-color: rgb(34, 98, 218);
+    }
+
+    .label-focused {
+        top: -0.6rem;
+        left: 0.8rem;
+        font-size: 14px;
+        font-weight: 700;
+        background-color: #FFFFFF;
+        z-index: 10;
+        border-radius: 14px;
+    }
+
+}
+
+ion-button {
+    --background: linear-gradient(90deg, rgb(73, 128, 209) 0%, rgba(83, 161, 233, 0.719)) 100%;
+    text-transform: initial;
+    --border-radius: 10px;
+    margin-bottom: 0.5rem;
+    height: 48px;
+}
