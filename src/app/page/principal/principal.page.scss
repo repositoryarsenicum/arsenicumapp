@@ -131,10 +131,8 @@ ion-list {
 .area-despesas-fixas {
     .card-container {
         height: 90px;
-        background: linear-gradient(40deg, 
-            rgb(212, 210, 53) 0%, 
-            rgb(165, 142, 12) 46%, 
-            rgb(236, 222, 22) 100%);
+        // background: linear-gradient(40deg, rgb(212, 210, 53) 0%, rgb(165, 142, 12) 46%, rgb(236, 222, 22) 100%);
+        // background: linear-gradient(40deg, rgb(199, 53, 212) 0%, rgb(165, 12, 165) 46%, rgb(218, 22, 236) 100%);
         border-radius: 10px;
         color: #FFFFFF;
         display: inline;

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PessoaModel } from './../../../model/pessoa-model';
+import { PessoaService } from './../../../service/pessoa.service';
 
 @Component({
   selector: 'app-despesa-cadastrar',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DespesaCadastrarPage implements OnInit {
 
-  constructor() { }
+  public pessoaList: PessoaModel[];
+
+  constructor(
+    private pessoaService: PessoaService
+  ) { }
 
   ngOnInit() {
+    this.recuperarPessoa();
+  }
+
+  public async recuperarPessoa() {
+    this.pessoaService.recuperarPessoasSistema().subscribe(response => {
+      this.pessoaList = response;
+    });
   }
 
 }

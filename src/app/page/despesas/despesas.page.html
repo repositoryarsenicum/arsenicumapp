@@ -6,8 +6,21 @@
         <ion-back-button text="" defaultHref="home"></ion-back-button>
       </ion-button>
     </ion-buttons>
-    
-    <ion-title>Despesas</ion-title>
+
+      <h6>Gerenciar Despesas</h6>
+
+    <ion-buttons slot="end">
+
+      <ion-button (click)="redirecionarTelaCadastrarDespesa()">
+        <ion-icon name="add-circle-outline"></ion-icon>
+      </ion-button>
+
+      <ion-button (click)="ngOnInit()">
+        <ion-icon name="refresh-outline"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
@@ -52,7 +65,7 @@
 
   <div>
   
-    <p style="margin-left: 4%;">Despesas Fixas</p>
+    <p style="margin-left: 4%; font-weight: bold;">Despesas Fixas</p>
   
     <ion-card>
       <ion-row>
@@ -64,7 +77,7 @@
             <b>Brava Internet</b>
           </ion-label>
           <ion-label>
-            <p style="font-size: 12px;">Pagamentos | Carteira</p>
+            <p style="font-size: 12px;">10/12/2021 | Pagamentos</p>
           </ion-label>
         </ion-col>
         <ion-col size="3">
@@ -85,7 +98,7 @@
             <b>Sinagoga Keter Torah</b>
           </ion-label>
           <ion-label>
-            <p style="font-size: 12px;">Pagamentos | Carteira</p>
+            <p style="font-size: 12px;">10/12/2021 | Pagamentos</p>
           </ion-label>
         </ion-col>
         <ion-col size="3">
@@ -106,7 +119,75 @@
             <b>Banco do Brasil</b>
           </ion-label>
           <ion-label>
-            <p style="font-size: 12px;">Pagamentos | Carteira</p>
+            <p style="font-size: 12px;">10/12/2021 | Pagamentos</p>
+          </ion-label>
+        </ion-col>
+        <ion-col size="3">
+          <ion-label>
+            <p style="font-size: 13px; margin-top: 8px; font-weight: bold; color: green;">R$ 1.918,00</p>
+          </ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
+
+  <div>
+  
+    <p style="margin-left: 4%; margin-top: 40px; font-weight: bold;">Despesas Variáveis</p>
+  
+    <ion-card>
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="barcode-outline" style="margin-top: 10px;"></ion-icon>
+        </ion-col>
+        <ion-col size="7">
+          <ion-label>
+            <b>Brava Internet</b>
+          </ion-label>
+          <ion-label>
+            <p style="font-size: 12px;">10/12/2021 | Pagamentos</p>
+          </ion-label>
+        </ion-col>
+        <ion-col size="3">
+          <ion-label>
+            <p style="font-size: 13px; margin-top: 16%; font-weight: bold; color: green;">R$ 118,00</p>
+          </ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+    <ion-card>
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="barcode-outline" style="margin-top: 10px;"></ion-icon>
+        </ion-col>
+        <ion-col size="7">
+          <ion-label>
+            <b>Sinagoga Keter Torah</b>
+          </ion-label>
+          <ion-label>
+            <p style="font-size: 12px;">10/12/2021 | Pagamentos</p>
+          </ion-label>
+        </ion-col>
+        <ion-col size="3">
+          <ion-label>
+            <p style="font-size: 13px; margin-top: 8px; font-weight: bold; color: green;">R$ 5.818,00</p>
+          </ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  
+    <ion-card>
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon name="barcode-outline" style="margin-top: 10px;"></ion-icon>
+        </ion-col>
+        <ion-col size="7">
+          <ion-label>
+            <b>Banco do Brasil</b>
+          </ion-label>
+          <ion-label>
+            <p style="font-size: 12px;">10/12/2021 | Pagamentos</p>
           </ion-label>
         </ion-col>
         <ion-col size="3">
