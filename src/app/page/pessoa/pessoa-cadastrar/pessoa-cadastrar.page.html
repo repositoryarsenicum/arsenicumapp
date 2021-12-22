@@ -10,20 +10,53 @@
 
     <!-- <ion-card> -->
 
-      <!-- <div>
+      <div>
+        <ion-radio-group>
+
+          <ion-list-header>
+            <ion-label>Categoria da Pessoa</ion-label>
+          </ion-list-header>
+
+          <ion-item>
+            <ion-label>Pessoa Física</ion-label>
+            <ion-radio slot="start" value="pf"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Pessoa Jurídica</ion-label>
+            <ion-radio slot="start" value="pj"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Pessoa Intituição Financeira</ion-label>
+            <ion-radio slot="start" value="pi"></ion-radio>
+          </ion-item>
+
+          <ion-text color="danger" *ngIf="false">Campo Obrigatório</ion-text>
+      </ion-radio-group>
+      </div>
+
+      <div>
         <ion-item>
           <ion-label position="floating">Nome Completo</ion-label>
           <ion-input type="text" ngModel #nomeInput="ngModel" name="nome" required="true"></ion-input>
         </ion-item>
         <ion-text color="danger" *ngIf="!nomeInput.valid && nomeInput.touched">Campo Obrigatório</ion-text>
-      </div> -->
+      </div>
+
+      <!-- <div class="form-field">
+
+        <label [ngClass]="isFocoCampo ? 'label-focused' : ''">Nome Completo</label>
+        <input type="text" (focus)="isFocoCampo = true" (blur)="onBlur($event)" />
+
+      </div>
 
       <div class="form-field">
 
         <label [ngClass]="isFocoCampo ? 'label-focused' : ''">Nome Completo</label>
         <input type="text" (focus)="isFocoCampo = true" (blur)="onBlur($event)" />
 
-      </div>
+      </div> -->
 
     <!-- </ion-card> -->
 

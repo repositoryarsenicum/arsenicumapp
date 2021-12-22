@@ -49,9 +49,7 @@ export class PessoaCadastrarPage implements OnInit {
     const pessoaModel: PessoaModel = this.form.value;
     const { nome } = this.form.value;
     if(!nome) return;
-    console.log(pessoaModel);
     this.pessoaService.criarPessoaFisica(pessoaModel).subscribe( response => {
-      console.log(response);
       this.form.reset(); 
       alerta.present();
     });
