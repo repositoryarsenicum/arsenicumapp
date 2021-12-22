@@ -46,7 +46,7 @@ export class PessoaPage implements OnInit {
         {
           text: "Cancelar",
           role: "cancel",
-          cssClass: "secondary"
+          cssClass: "primary"
         },
         {
           text: "Excluir",
@@ -66,6 +66,7 @@ export class PessoaPage implements OnInit {
     const modal = await this.modalController.create({
       component: PessoaCadastrarPage,
       swipeToClose: true,
+      animated: true,
       presentingElement: await this.modalController.getTop()
     });
     return await modal.present();

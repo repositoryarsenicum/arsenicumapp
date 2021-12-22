@@ -22,7 +22,9 @@ export class PessoaCadastrarPage implements OnInit {
     private router: Router
   ) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    console.log("Pessoa Cadastrar...."); 
+  }
 
   onBlur(event: any) {
     const value = event.target.value;
