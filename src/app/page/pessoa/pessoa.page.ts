@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertController, LoadingController, ModalController } from '@ionic/angular';
+import { ActionSheetController, AlertController, LoadingController, ModalController } from '@ionic/angular';
 import { PessoaModel } from './../../model/pessoa-model';
 import { PessoaService } from './../../service/pessoa.service';
 import { PessoaCadastrarPage } from './pessoa-cadastrar/pessoa-cadastrar.page';
@@ -19,7 +19,8 @@ export class PessoaPage implements OnInit {
     private pessoaService: PessoaService,
     private loadingController: LoadingController,
     private modalController: ModalController,
-    private alertController: AlertController
+    private alertController: AlertController,
+    private actionSheetController: ActionSheetController
   ) { }
 
   ngOnInit() {
@@ -61,13 +62,45 @@ export class PessoaPage implements OnInit {
     alertaExclusao.present();
   }
 
-  public async redirecionarTelaCadastrarPessoa() {
+  public async redirecionarTelaCadastrarPessoaFisica() {
     const modal = await this.modalController.create({
       component: PessoaCadastrarPage,
       swipeToClose: true,
       presentingElement: await this.modalController.getTop()
     });
     return await modal.present();
+  }
+
+  public async redirecionarTelaCadastrarPessoaJuridica() {
+    console.log("Tela Pessoa Juridica");
+  }
+
+  public async redirecionarTelaCadastrarPessoaIntituicaoFinanceira() {
+    console.log("Tela Pessoa Instituicao");
+  }
+
+  public async verificarTipoPessoaCadastro() {
+    const actionSheet = await this.actionSheetController.create({
+      header: "Categoria da Pessoa",
+      buttons: [
+        {
+        text: "Pessoa Física",
+        icon: "add",
+        handler: () => {
+          this.redirecionarTelaCadastrarPessoaFisica();
+        }
+      },
+      {
+        text: "Pessoa Jurídica",
+        icon: "add"
+      },
+      {
+        text: "Pessoa Instituição Financeira",
+        icon: "add"
+      }
+    ]
+    });
+    await actionSheet.present();
   }
 
 }
