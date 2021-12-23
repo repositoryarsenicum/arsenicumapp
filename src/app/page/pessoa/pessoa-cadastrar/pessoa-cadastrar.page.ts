@@ -61,4 +61,8 @@ export class PessoaCadastrarPage implements OnInit {
     window.location.reload();
   }
 
+  redirecionarTelaGerenciarPessoa() {
+    window.location.reload();
+  }
+
 }

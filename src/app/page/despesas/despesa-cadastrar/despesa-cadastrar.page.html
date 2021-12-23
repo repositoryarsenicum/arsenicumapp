@@ -39,7 +39,7 @@
       <div>
         <ion-item>
           <ion-label position="floating">Valor da Despesa</ion-label>
-          <ion-input type="text" required="true"></ion-input>
+          <ion-input type="text" pattern="[0-9]*" decimal="true" minlength="0" maxlength="0" button-char="." required="true"></ion-input>
         </ion-item>
         <ion-text color="danger" *ngIf="false">Campo Obrigatório</ion-text>
       </div>
