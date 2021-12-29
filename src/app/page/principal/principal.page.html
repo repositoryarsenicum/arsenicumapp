@@ -72,15 +72,54 @@
 
   <div class="title ion-padding">
     <b>Empréstimos</b>
-    <p>Ver Mais</p>
+    <a href="">Ver Mais</a>
   </div>
 
   <div class="area-emprestimos">
 
-    <div routerLink="" class="area-left">
-      <p>Concedidos</p>
-      <b>R$ 10.765,09</b>
-    </div>
+    <ion-card>
+
+      <div class="emprestimo-header">
+        <div class="areaA">
+          <b>Empréstimo 202100101</b>
+        </div>
+        <div class="areaB">
+          R$ 2.400,00
+        </div>
+      </div>
+
+      <div class="emprestimo-content">
+        Jonas Luiz Rodrigues Andrade
+      </div>
+
+      <div class="emprestimo-footer">
+        <ion-progress-bar value="0.2"></ion-progress-bar>
+        <p>55%</p>
+      </div>
+      
+    </ion-card>
+
+    <ion-card>
+
+      <div class="emprestimo-header">
+        <div class="areaA">
+          <b>Empréstimo 202100201</b>
+        </div>
+        <div class="areaB">
+          R$ 6.000,00
+        </div>
+      </div>
+
+      <div class="emprestimo-content">
+        Rogério Nascimento
+      </div>
+
+      <div class="emprestimo-footer">
+        <ion-progress-bar value="0.2"></ion-progress-bar>
+        <p>55%</p>
+      </div>
+      
+    </ion-card>
 
   </div>
 
@@ -244,6 +283,38 @@
 
         <div class="barra-progresso">
           <ion-progress-bar value="0.8" buffer="0.2"></ion-progress-bar>
+        </div>
+
+      </ion-card>
+
+      <ion-card>
+
+        <div class="produto-valor">
+
+          <p>Macbook Air 2021</p>
+
+          <p>R$ 5.000,00 de R$ 13.980,00</p>
+
+        </div>
+
+        <div class="barra-progresso">
+          <ion-progress-bar value="0.4" buffer="0.7" color="danger"></ion-progress-bar>
+        </div>
+
+      </ion-card>
+
+      <ion-card>
+
+        <div class="produto-valor">
+
+          <p>Mini Servidor</p>
+
+          <p>R$ 800,00 de R$ 7.970,00</p>
+
+        </div>
+
+        <div class="barra-progresso">
+          <ion-progress-bar value="0.9" buffer="0.1" color="success"></ion-progress-bar>
         </div>
 
       </ion-card>

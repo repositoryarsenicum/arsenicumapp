@@ -32,3 +32,27 @@
 * {
     font-family: "Poppins-Regular";
 }
+
+.login-modal .modal-wrapper {
+    height: 68%;
+    position: sticky;
+    display: block;
+    top: 60%;
+    border-radius: 20px 20px 0 0;
+}
+
+ion-button {
+    width: 90%;
+    margin-left: 20px;
+}
+
+.main-button {
+    margin-top: 30px;
+    margin-left: 12px;
+    --background: linear-gradient(90deg, rgb(73, 128, 209) 0%, rgba(83, 161, 233, 0.719)) 100%;
+    text-transform: initial;
+    --border-radius: 16px;
+    margin-bottom: 0.5rem;
+    height: 66px;
+    width: 94%;
+}

@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'welcome',
     pathMatch: 'full'
   },
   {
@@ -38,6 +38,22 @@ const routes: Routes = [
   {
     path: 'despesas',
     loadChildren: () => import('./page/despesas/despesas.module').then( m => m.DespesasPageModule)
+  },
+  {
+    path: 'welcome',
+    loadChildren: () => import('./page/welcome/welcome.module').then( m => m.WelcomePageModule)
+  },
+  {
+    path: 'singin',
+    loadChildren: () => import('./page/singin/singin.module').then( m => m.SinginPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./page/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'forgot',
+    loadChildren: () => import('./page/forgot/forgot.module').then( m => m.ForgotPageModule)
   }
 ];
 

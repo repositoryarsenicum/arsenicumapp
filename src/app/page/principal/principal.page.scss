@@ -53,18 +53,58 @@ ion-list {
         color: #656565;
     }
     p {
-        margin: 0 16px 0 0;
+        margin-left: 60px;
         font-size: 13px;
         color: rgb(139, 138, 138);
         text-transform: initial;
     }
+    a {
+        text-decoration: none;
+        font-size: 14px;
+    }
 }
 
 .area-emprestimos {
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
-    // background: linear-gradient(10deg, rgb(104, 97, 230) 0%, rgb(82, 82, 223) 30%, rgba(0, 212, 255, 1) 100%);
+
+    padding: 2px;
+
+    ion-card {
+
+        height: 120px;
+
+        .emprestimo-header {
+
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+
+            .areaA {
+                
+            }
+
+            .areaB {
+                font-weight: 700;
+                color: #000000;
+            }
+    
+        }
+    
+        .emprestimo-content {
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .emprestimo-footer {
+            padding: 10px;
+            margin-bottom: 20px;
+            p {
+                margin-top: 4px;
+                text-align: right;
+            }
+        }
+
+    }
+
 }
 
 .area-demonstrativo {

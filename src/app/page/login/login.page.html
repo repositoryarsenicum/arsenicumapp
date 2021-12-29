@@ -1,0 +1,35 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Realizar Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <header>
+
+    <div>
+      <ion-item>
+        <ion-label position="floating">Identificador de Acesso</ion-label>
+        <ion-input type="number" name="nome" required="true"></ion-input>
+      </ion-item>
+      <ion-text color="danger" *ngIf="false">Campo Obrigatório</ion-text>
+    </div>
+
+    <div>
+      <ion-item>
+        <ion-label position="floating">Chave de Acesso</ion-label>
+        <ion-input [type]="isShowPassword ? 'text' : 'password'" name="nome" required="true"></ion-input>
+        <ion-icon [name]="iconEyeOpen" (click)="apresentarValorCampo()" slot="end"></ion-icon>
+      </ion-item>
+      <ion-text color="danger" *ngIf="false">Campo Obrigatório</ion-text>
+    </div>
+
+  </header>
+
+  <footer class="ion-text-center">
+    <ion-button (click)="fecharModal()" expand="block" fill="solid" class="main-button">Acessar Conta</ion-button>
+    <ion-button (click)="fecharModal()" fill="clear">Fechar</ion-button>
+  </footer>
+
+</ion-content>
